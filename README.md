@@ -63,8 +63,9 @@ git checkout -b feature/new-feature
 
   4. Commit your changes with clear and concise commit messages:
      ```bash
-git commit -m "Add: New script for feature XYZ"
+     git commit -m "Add: New script for feature XYZ"
 ```
+
   5. Push your changes to your forked repository: 
        ```bash
   git push origin feature/new-feature
