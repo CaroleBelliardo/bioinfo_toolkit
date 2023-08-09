@@ -62,14 +62,17 @@ git checkout -b feature/new-feature
   3. Make your changes, and ensure that your code is properly documented.
 
   4. Commit your changes with clear and concise commit messages:
-     ```bash
-     git commit -m "Add: New script for feature XYZ"
-```
 
-  5. Push your changes to your forked repository: 
-       ```bash
-  git push origin feature/new-feature
-  ```
+
+   ```bash
+git commit -m "Add: New script for feature XYZ"
+   ```
+  5. Push your changes to your forked repository:
+     
+   ```bash
+git push origin feature/new-feature
+   ```
+
 
 ## Funding
 This work was supported by the Plant Health and Environment Department of the French National Research Institute for Agriculture, Food, and the Environment (INRAe), as well as MYCOPHYTO sas. Additionally, financial assistance was provided by the French National Research Agency (Agence Nationale de la Recherche) under grant number ANR-22-PEAE-0011.
