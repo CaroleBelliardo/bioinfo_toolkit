@@ -1,12 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import argparse
 from Bio import SeqIO
 import pandas as pd
 import csv
 import os
 
-output_files = 'fasta_taxid/'
+
+parser = argparse.ArgumentParser(description="Modifie les fichiers fasta en ajoutant le taxid dans la description.")
+parser.add_argument("--output-dir", required=True, help="Répertoire de sortie pour les fichiers fasta modifiés")
+parser.add_argument("--corresp-file", required=True, help="Fichier de correspondance taxid-nom de fichier fasta")
+
+args = parser.parse_args()
+output_files = args.output_dir
+
 
 if not os.path.exists(output_files):
     os.makedirs(output_files)
@@ -19,7 +27,7 @@ else:
 fichiers = os.listdir(".")
 
 # Lire le fichier de correspondance taxid-nom de fichier fasta
-corresp_file = "correspondance_namTaxid.tab"
+corresp_file = args.corresp_file
 
 # Récupération de la correspondance taxid/nom de fichier fasta
 corresp = pd.read_csv(corresp_file, sep='\t', names = ["species","taxid"])
