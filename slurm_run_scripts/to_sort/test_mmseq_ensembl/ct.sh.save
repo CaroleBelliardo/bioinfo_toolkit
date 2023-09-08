@@ -1,0 +1,38 @@
+#!/bin/bash
+
+#Submit this script with: sbatch thefilename
+
+#SBATCH --time=72:00:00   # walltime
+#SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
+#SBATCH --cpus-per-task=50     # number of CPU per task
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --mem=248G   # memory per Nodes
+#SBATCH -J "ct"   # job name
+#SBATCH --mail-user=carole.belliardo@inra.fr   # email address
+#SBATCH --mail-type=ALL
+#SBATCH --gid=bioinfo
+
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+#cd $1
+#for i in *
+#  do gzip -d $i 
+#done
+
+#for i in *.fa
+ #do cat $i >> blast_ensembl_genome_20200130/ensembl_genome_20200130
+#done 
+
+cd /bighub/hub/DB/ensembl_genome_20200130/blast_ensembl_genome_20200130
+grep '>' ensembl_genome_20200130.out > ensembl_genome_20200130_seqID.out
+wc -l ensembl_genome_20200130_seqID.out > ensembl_genome_20200130_seqID_uniq_count.out
+sort ensembl_genome_20200130_seqID.out |uniq -c |sort > ensembl_genome_20200130_seqID_uniqc_sort.out
+wc -l ensembl_genome_20200130_seqID_uniqc_sort.out >> ensembl_genome_20200130_seqID_uniq_count.out
+
+#sh ./remove_duplicate_sequence.shx -f ensembl_genome_20200130 -o ensembl_genome_20200130.out
+
+#SING_IMG=/home/singularity/images/blast_2.9.sif
+#SING2="singularity exec --bind /bighub/hub:/bighub/hub:rw --bind /work/cbelliardo:/work/cbelliardo:rw"
+
+#$SING2 $SING_IMG makeblastdb -dbtype nucl -in ensembl_genome_20200130 -parse_seqids -taxid_map nucl.accTaxid 
+

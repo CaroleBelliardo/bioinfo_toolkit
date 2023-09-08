@@ -1,0 +1,58 @@
+# Singularity Recipe for Alienness vs Predictor
+# Description: This Singularity recipe installs and configures the Alienness vs Predictor tool.
+
+Bootstrap: library
+From: ubuntu:18.04
+
+%help
+Alienness vs Predictor - AvP performs automatic detection of HGT candidates within a phylogenetic framework. In a nutshell, the pipeline selects proteins based on a similarity hits file (blast or diamond), extracts sequences from the database, performs MSA, and phylogenetic inference. Then, it traverses the tree in order to detect candidate HGTs. Furthermore, it can evaluate the validity of candidate HGTs based on alternative topology testing and surrounding genes on the genome
+
+https://github.com/GDKO/AvP
+https://github.com/GDKO/AvP/wiki
+
+When using AvP, please cite this paper:
+"Koutsovoulos GD, Granjeon Noriot S, Bailly-Bechet M, Danchin EGJ, Rancurel C (2022) AvP: A software package for automatic phylogenetic detection of candidate horizontal gene transfers. PLoS Comput Biol 18(11): e1010686. https://doi.org/10.1371/journal.pcbi.1010686"
+
+
+
+%setup
+# Create directory for installation
+mkdir ${SINGULARITY_ROOTFS}/home/tools
+
+%files
+# Copy necessary files to the container
+./Miniconda3-latest-Linux-x86_64.sh /home/tools/.
+/home/tools/AvP /home/tools/AvP
+
+%post
+# Update and install required packages
+apt-get -y update && \
+    apt-get -y install wget build-essential g++ make bash locales postgresql less curl && \
+    locale-gen en_US.UTF-8 && \
+
+# Install Miniconda3
+cd /home/tools/ && \
+    yes y | bash ./Miniconda3-latest-Linux-x86_64.sh -b -p /home/tools/miniconda && \
+
+# Configure Conda channels and install dependencies
+cd /home/tools/miniconda/bin/ && \
+    for channel in defaults bioconda conda-forge; do
+        yes y | ./conda config --add channels $channel;
+    done && \
+    yes y | ./conda install -c bioconda mafft blast=2.9.0 trimal fasttree iqtree numpy networkx pyyaml docopt biopython ete3 six pybedtools
+
+%labels
+Maintainer: Carole Belliardo <carole.belliardo@inrae.fr>
+Updater: Carole Belliardo <carole.belliardo@inrae.fr>
+ContainerVersion: v1
+Software: Alienness vs Predictor
+
+%environment
+# Set environment variables
+export LC_ALL=en_US.utf8
+export PATH=/home/tools/miniconda/bin:$PATH
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+%runscript
+# Define the runscript here

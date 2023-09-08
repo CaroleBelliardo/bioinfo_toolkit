@@ -1,0 +1,4 @@
+#ask for add to Cart
+curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login=carole.belliardo@inra.fr' --data-urlencode 'password=300687cB' -c cookies > /dev/null
+curl 'https://genome.jgi.doe.gov/portal/ext-api/downloads/img/43631-1/tar' -b cookies > Rhizo_img_data_43631-1To.tar # url given in mail
+

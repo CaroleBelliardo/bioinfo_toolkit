@@ -1,0 +1,4 @@
+Loading singularity/3.5.3
+  Loading requirement: go/1.16.4
+[33mWARNING:[0m destination /work/cbelliardo already in mount list: destination is already in the mount point list
+[33mWARNING:[0m Bind mount '/work/cbelliardo => /work/cbelliardo' overlaps container CWD /work/cbelliardo/bin/slurm_script/PAPIER2_HGT/NEW_analyse2022, may not be available

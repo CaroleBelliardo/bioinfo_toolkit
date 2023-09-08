@@ -1,0 +1,14 @@
+[33mWARNING:[0m destination /work/cbelliardo already in mount list: destination is already in the mount point list
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 83383 was translated into 67370
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1304902 was translated into 2731756
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2779511 was translated into 2779510
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1915400 was translated into 67332
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 285570 was translated into 67282
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 66889 was translated into 28893
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2695855 was translated into 2695856
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 85974 was translated into 2655010
+[33mWARNING:[0m destination /work/cbelliardo already in mount list: destination is already in the mount point list
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?

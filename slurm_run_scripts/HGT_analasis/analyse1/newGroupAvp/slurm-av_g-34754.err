@@ -1,0 +1,77 @@
+[33mWARNING:[0m destination /work/cbelliardo already in mount list: destination is already in the mount point list
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2695855 was translated into 2695856
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2304686 was translated into 216572
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1898205 was translated into 2485925
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2795028 was translated into 2795027
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2653702 was translated into 2794033
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 541000 was translated into 216572
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 13349 was translated into 2813651
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 85974 was translated into 2655010
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 453998 was translated into 2049356
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2485489 was translated into 1233460
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 998844 was translated into 2516557
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2660643 was translated into 2839758
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2027912 was translated into 2028575
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2764719 was translated into 2813823
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2712861 was translated into 2764718
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 332056 was translated into 332055
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 62688 was translated into 2867405
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 654845 was translated into 1969733
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2755555 was translated into 2683589
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1816615 was translated into 1751046
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1134054 was translated into 160864
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1658172 was translated into 1955775
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2759850 was translated into 2759747
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2759853 was translated into 2759752
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1385592 was translated into 1385591
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 861208 was translated into 1183401
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718633 was translated into 2713603
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718625 was translated into 2713603
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718626 was translated into 2713603
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718628 was translated into 2713505
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718623 was translated into 2713505
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 56484 was translated into 2754530
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2744024 was translated into 111844
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2744472 was translated into 111844
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2694937 was translated into 2599607
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718648 was translated into 2713501
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2718624 was translated into 2713603
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2709395 was translated into 2709394
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2614799 was translated into 2614639
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 196083 was translated into 84480
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 329525 was translated into 33900
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2749835 was translated into 2692317
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2749834 was translated into 2692317
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2660639 was translated into 2743357
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2660640 was translated into 2743358
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 83383 was translated into 67370
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2544872 was translated into 2529858
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 285570 was translated into 67282
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2585774 was translated into 2585773
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2722816 was translated into 396
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 66889 was translated into 28893
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1915400 was translated into 67332
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1054037 was translated into 336203
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2708078 was translated into 2769067
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2708081 was translated into 2708079
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 1090573 was translated into 1132417
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2725416 was translated into 2725414
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2605384 was translated into 2605383
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2605269 was translated into 2605270
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2599411 was translated into 2606616
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2529841 was translated into 2529843
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2731243 was translated into 2529843
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 45461 was translated into 37919
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 262776 was translated into 37919
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2339229 was translated into 1070861
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2572196 was translated into 2530454
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2052837 was translated into 2067065
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2794789 was translated into 2795026
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2696476 was translated into 1839785
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 338187 was translated into 1224742
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/ncbi_taxonomy/ncbiquery.py:243: UserWarning: taxid 2529842 was translated into 2731247
+[33mWARNING:[0m destination /work/cbelliardo already in mount list: destination is already in the mount point list
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?
+/home/tools/miniconda/lib/python3.8/site-packages/ete3-3.1.2-py3.7.egg/ete3/evol/parser/codemlparser.py:221: SyntaxWarning: "is" with a literal. Did you mean "=="?

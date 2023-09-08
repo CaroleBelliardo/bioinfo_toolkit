@@ -1,0 +1,68 @@
+BootStrap: library
+From: ubuntu:18.04
+
+%help
+HiFi-MAG-Pipeline 
+https://github.com/PacificBiosciences/pb-metagenomics-tools/blob/master/docs/Tutorial-HiFi-MAG-Pipeline.md
+
+
+%setup
+mkdir ${SINGULARITY_ROOTFS}/home/tools
+
+
+%files
+/home/singularity/tarball/Miniconda3-latest-Linux-x86_64.sh /home/tools/.
+#/home/singularity/tarball/HiFi-MAG-Pipeline /home/tools/.
+
+%post
+apt-get -y update
+apt-get -y install wget build-essential
+apt-get -y install g++
+apt-get -y install make
+apt-get -y install bash
+apt-get install -y locales 
+apt-get -y install postgresql
+apt-get -y install less
+apt-get -y install rsync
+locale-gen en_US.UTF-8
+
+
+cd /home/tools/
+yes y | bash ./Miniconda3-latest-Linux-x86_64.sh -b -p /home/tools/conda
+
+cd /home/tools/conda/bin/
+
+
+./conda config --add channels defaults
+./conda config --add channels bioconda
+./conda config --add channels conda-forge
+
+./conda install -c conda-forge mamba
+./mamba install -c conda-forge -c bioconda -y snakemake
+
+
+#./conda install -c bioconda -y gtdbtk
+#./conda install -c bioconda -y checkm-genome
+#./conda install -c bioconda -y diamond 
+#./conda install -c bioconda -y prodigal 
+
+./conda clean --all -y
+apt autoclean -y
+rm /home/tools/Miniconda3-latest-Linux-x86_64.sh
+
+%labels
+Maintainer Carole Belliardo
+Updater  Carole Belliardo<carole.belliardo@inra.fr>
+
+
+ContainerVersion v1
+Software
+
+%environment
+    export LC_ALL=en_US.utf8
+    export PATH=/home/tools/conda/bin:$PATH
+    export LANGUAGE=en_US.UTF-8
+    export LANG=en_US.UTF-8
+
+
+%runscript

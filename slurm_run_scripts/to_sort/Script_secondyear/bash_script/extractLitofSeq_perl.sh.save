@@ -1,0 +1,28 @@
+#!/bin/bash
+usage () { echo "Usage: cmd [-l] [-f] [-o] \n\n Usage:\n extractListofSeq -h    
+Display this help message.\n extractListofSeq -l 'path toward list of seq identifier' -f 'path toward fasta file -o 'path toward output fasta file"; exit 1;}
+
+while getopts ":l:f:o:" opt; do # : after args
+  case ${opt} in
+    l ) l=${OPTARG} ;;
+    f ) f=${OPTARG} ;;
+    o ) o=${OPTARG} ;;
+    \? ) usage ;; # \? = h
+    *)  echo Unknown option: $OPTARG.;;
+#    h ) echo usage; exit;; # echo "Usage: cmd [-l] [-f] [-o] " ;;
+ #   \? ) echo "Unknown option: -$OPTARG" ; exit 1;;  
+  esac
+done
+
+if ((OPTIND == 1))
+then
+    echo "No options specified, see -h option for usage"
+fi
+
+shift "$((OPTIND-1))" # removes all the options that have been parsed by getopts
+
+
+echo "${l}" ${f} ${o}
+
+#$SING2 $SING_IMG perl -ne 'if(/^>(\S+)/){$c=$i{$1}}$c?print:chomp;$i{$_}=1 if @ARGV' $F.tbseq $fasta > $out 
+

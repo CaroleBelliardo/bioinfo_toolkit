@@ -1,0 +1,6 @@
+Length:431275294  	Min.   :    100.0  
+Class :character  	1st Qu.:    283.0  
+Mode  :character  	Median :    373.0  
+NA	Mean   :    526.3  
+NA	3rd Qu.:    534.0  
+NA	Max.   :2043247.0  

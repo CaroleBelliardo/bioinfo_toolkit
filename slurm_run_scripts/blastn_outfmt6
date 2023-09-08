@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#Submit this script with: sbatch thefilename
+
+#SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
+#SBATCH --cpus-per-task=60     # number of CPU per task #4
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --mem=400G   # memory per Nodes   #38
+#SBATCH -J "blast"   # job name
+#SBATCH --mail-user=carole.belliardo@inrae.fr   # email address
+#SBATCH --mail-type=ALL
+#SBATCH -e slurm-blast-%j.err
+#SBATCH -o slurm-blast-%j.out
+#SBATCH -p all
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+module purge
+module load singularity/3.5.3
+
+SING_IMG='/database/hub/SINGULARITY_GALAXY/blast_2.9.sif'
+SING2='singularity exec --bind /kwak/hub'
+
+cd $1
+db_fasta_path=$2
+db_name=$3
+
+if $SING2 $SING_IMG makeblastdb -in $db_fasta_path -parse_seqids -blastdb_version 5 -dbtype nucl -out $db_name; then
+    echo 'makedb ok'
+else
+    echo 'makedb fail'
+fi
+
+
+query=$4
+out=$5
+
+if $SING2 $SING_IMG blastn -db $db -query $in -out $out -outfmt 6 -num_threads  $SLURM_JOB_CPUS_PER_NODE 
+    echo 'blastn ok'
+else
+    echo 'blastn fail'
+fi
+
+## run
+# sbatch blastn_outfmt6 <wd_path> <db_fasta_path> <makdb_name> <query_fasta> <output_path> 

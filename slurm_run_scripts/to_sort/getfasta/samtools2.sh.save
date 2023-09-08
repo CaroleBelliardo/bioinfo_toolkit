@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#Submit this script with: sbatch thefilename
+
+#SBATCH --time=72:00:00   # walltime
+#SBATCH --ntasks=2   # number of processor cores (i.e. tasks)
+#SBATCH --cpus-per-task=16    # number of CPU per task
+#SBATCH --nodes=1   # number of nodes
+#SBATCH --mem=128G   # memory per Nodes
+#SBATCH -J "samt_Rhizo"   # job name
+#SBATCH --mail-user=carole.belliardo@inra.fr   # email address
+#SBATCH --mail-type=ALL
+#SBATCH --gid=bioinfo
+
+
+# LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
+
+SING_IMG=/home/singularity/images/Trinity.sif
+#BUILD= # out
+
+SING2="singularity exec --bind /bighub/hub:/bighub/hub:rw"
+#DIR= #in
+
+#Metag_fasta_rep=/bighub/hub/people/adrien-2019/2019_metagenomes/faa_files/
+#out=/work/cbelliardo/outputs
+
+echo {$SLURM_ARRAY_TASK_ID}
+
+while read file
+  do 
+    xargs $SING2 $SING_IMG samtools faidx /bighub/hub/people/adrien-2019/2019_metagenomes/faa_files/${file} < /bighub/hub/people/carole-2019/work-bighub/Rhizo/Rhizophagus_IMG_seqID >> /work/cbelliardo/outputs/
+hub/hub/people/carole-2019/work-bighub/Rhizo/num_paquets_Rhizo
+
+
+
+

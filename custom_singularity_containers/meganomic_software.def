@@ -1,0 +1,96 @@
+BootStrap: library
+From: ubuntu:18.04
+
+%help
+Alienness vs Predictor
+
+%setup
+mkdir ${SINGULARITY_ROOTFS}/home/tools
+
+
+%files
+./Miniconda3-latest-Linux-x86_64.sh /home/tools/.
+./kraken2-master /home/tools/.
+./hmmer-3.3.1.tar.gz /home/tools/
+
+%post
+apt-get -y update
+apt-get -y install wget build-essential
+apt-get -y install g++
+apt-get -y install make
+apt-get -y install bash
+apt-get install -y locales 
+locale-gen en_US.UTF-8
+apt-get -y install postgresql
+apt-get -y install less
+apt-get -y install vim
+apt-get -y install rsync
+apt-get -y install curl
+
+
+cd /home/tools/
+tar xf hmmer-3.3.1.tar.gz
+cd hmmer-3.3.1
+./configure
+make
+make check
+make install
+
+
+cd /home/tools/
+yes y | bash ./Miniconda3-latest-Linux-x86_64.sh -b -p /home/tools/miniconda
+cd /home/tools/miniconda/bin/
+yes y | ./conda config --add channels defaults
+yes y | ./conda config --add channels bioconda
+yes y | ./conda config --add channels conda-forge
+
+
+yes y | ./conda install augustus
+yes y | ./conda update augustus
+yes y | ./conda install -c bioconda/label/cf201901 blast
+yes y | ./conda install -c bioconda mafft 
+yes y | ./conda install -c bioconda hmmer 
+yes y | ./conda install -c bioconda busco 
+yes y | ./conda install bedtools fastx_toolkit
+yes y | ./conda install pandas pyfasta
+yes y | ./conda install -c ohmeta gfatools 
+yes y | ./conda install augustus
+yes y | ./conda update augustus
+yes y | ./conda install flye
+yes y | ./conda install -c bioconda blast
+yes y | ./conda install -c bioconda prodigal 
+yes y | ./conda install -c bioconda gtdbtk 
+yes y | ./conda install -c bioconda diamond 
+yes y | ./conda install -c bioconda kraken2  
+yes y | ./conda install -c bioconda canu 
+yes y | ./conda install -c bioconda sortmerna 
+yes y | ./conda install -c bioconda simka 
+yes y | ./conda install -c bioconda kaiju 
+yes y | ./conda install -c bioconda jellyfish
+yes y | ./conda install -c bioconda checkm-genome  
+yes y | ./conda install -c bioconda minimap2
+yes y | ./conda install -c bioconda metaeuk
+yes y | ./conda install -c bioconda seqkit
+
+
+cd /home/tools/kraken2-master
+yes y | ./install_kraken2.sh /home/tools/kraken
+sed -i 's/lookup_accession_numbers/perl \/bighub\/hub\/people\/carole\/kraken2-master\/scripts\/lookup_accession_numbers\.pl/' /home/tools/kraken2-master/scripts/build_kraken2_db.sh
+
+
+%labels
+Maintainer Carole Belliardo
+Updater  Carole Belliardo<carole.belliardo@inra.fr>
+
+
+ContainerVersion v1
+Software
+
+%environment
+    export LC_ALL=en_US.utf8
+    export PATH=/home/tools/miniconda/bin:$PATH
+    export LANGUAGE=en_US.UTF-8
+    export LANG=en_US.UTF-8
+
+
+%runscript
