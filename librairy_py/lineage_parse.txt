@@ -1,0 +1,5 @@
+def parseLineageIntoList(string):
+    liste = list(map(int, (filter(None, string.split(';')))))
+    return liste
+
+
