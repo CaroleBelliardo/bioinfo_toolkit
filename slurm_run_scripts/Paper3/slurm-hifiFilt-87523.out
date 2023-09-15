@@ -16,3 +16,5 @@ poivron_R_oct__hifi_reads.fastq
 salade_I_fev__hifi_reads.fastq
 salade_R_fev__hifi_reads.fastq
 Identifying reads in aubergine_I_oct2__hifi_reads.fastq with adapter contamination on Fri Sep 15 09:47:13 BST 2023.
+Creating blocklist for aubergine_I_oct2__hifi_reads.fastq on Fri Sep 15 10:03:07 BST 2023.
+Removing adapter contaminated reads from aubergine_I_oct2__hifi_reads.fastq on Fri Sep 15 10:03:07 BST 2023.
