@@ -1,0 +1,54 @@
+# Singularity Recipe for HiFiAdapterFilt  
+# Description: This Singularity recipe installs and configures the Alienness vs Predictor tool.
+
+Bootstrap: library
+From: ubuntu:18.04
+
+%help
+https://doi.org/10.1186/s12864-022-08375-1
+https://github.com/sheinasim/HiFiAdapterFilt
+
+
+%setup
+# Create directory for installation
+mkdir ${SINGULARITY_ROOTFS}/home/tools
+
+%files
+# Copy necessary files to the container
+./Miniconda3-latest-Linux-x86_64.sh /home/tools/.
+
+%post
+# Update and install required packages
+export DEBIAN_FRONTEND=noninteractive
+apt-get -y update && \
+    apt-get -y install wget build-essential g++ make bash locales postgresql less curl && \
+    locale-gen en_US.UTF-8 && \
+
+# Install Miniconda3
+cd /home/tools/ && \
+    yes y | bash ./Miniconda3-latest-Linux-x86_64.sh -b -p /home/tools/miniconda && \
+
+# Configure Conda channels and install dependencies
+cd /home/tools/miniconda/bin/ && \
+for channel in defaults bioconda conda-forge; do
+    yes y | ./conda config --add channels $channel;
+done && \
+
+yes y | ./conda install -c bioconda blast=2.9.0 
+yes y | ./conda install -c bioconda bamtools
+
+%labels
+Maintainer: Carole Belliardo <carole.belliardo@inrae.fr>
+Updater: Carole Belliardo <carole.belliardo@inrae.fr>
+ContainerVersion: v1
+Software: Alienness vs Predictor
+
+%environment
+# Set environment variables
+export LC_ALL=en_US.utf8
+export PATH=/home/tools/miniconda/bin:$PATH
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+%runscript
+# Define the runscript here

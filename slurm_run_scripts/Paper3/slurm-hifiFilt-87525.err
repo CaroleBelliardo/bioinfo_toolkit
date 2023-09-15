@@ -1,0 +1,2 @@
+rm: cannot remove 'all.temp_file_list': No such file or directory
+/database/hub/WORKFLOW/HiFiAdapterFilt/pbadapterfilt.sh: line 83: [: too many arguments

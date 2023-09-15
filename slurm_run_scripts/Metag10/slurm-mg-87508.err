@@ -1,0 +1,37 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = "en_GB:en",
+	LC_ALL = (unset),
+	LC_ADDRESS = "fr_FR.UTF-8",
+	LC_NAME = "fr_FR.UTF-8",
+	LC_MONETARY = "fr_FR.UTF-8",
+	LC_PAPER = "fr_FR.UTF-8",
+	LC_IDENTIFICATION = "fr_FR.UTF-8",
+	LC_TELEPHONE = "fr_FR.UTF-8",
+	LC_MEASUREMENT = "fr_FR.UTF-8",
+	LC_TIME = "fr_FR.UTF-8",
+	LC_NUMERIC = "fr_FR.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Unknown option: i
+Started analysis of aubergine_R_oct__hifi_reads.fastq
+Approx 5% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 10% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 15% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 20% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 25% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 30% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 35% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 40% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 45% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 50% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 55% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 60% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 65% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 70% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 75% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 80% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 85% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 90% complete for aubergine_R_oct__hifi_reads.fastq
+Approx 95% complete for aubergine_R_oct__hifi_reads.fastq
