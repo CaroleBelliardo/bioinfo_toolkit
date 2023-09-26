@@ -1,0 +1,1 @@
+/kwak/hub/25_cbelliardo/github/10Metag/kraken_contigs.sh

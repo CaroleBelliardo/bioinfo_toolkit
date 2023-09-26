@@ -1,0 +1,9 @@
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 142266744 > ${out}/illumina_reads_R2_0.1.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 284533487 > ${out}/illumina_reads_R2_0.2.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 426800231 > ${out}/illumina_reads_R2_0.3.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 569066975 > ${out}/illumina_reads_R2_0.4.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 711333719 > ${out}/illumina_reads_R2_0.5.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 853600462 > ${out}/illumina_reads_R2_0.6.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 995867206 > ${out}/illumina_reads_R2_0.7.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 1138133950 > ${out}/illumina_reads_R2_0.8.fasta
+$SING2 $SING_IMG seqtk sample -s100 $illumina_reads_R2 1280400693 > ${out}/illumina_reads_R2_0.9.fasta

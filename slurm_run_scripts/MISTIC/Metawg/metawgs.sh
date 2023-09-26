@@ -3,14 +3,14 @@
 #Submit this script with: sbatch thefilename
 
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
-#SBATCH --cpus-per-task=20     # number of CPU per task #4
+#SBATCH --cpus-per-task=60     # number of CPU per task #4
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --mem=264G   # memory per Nodes   #38
-#SBATCH -J "Run1"   # job name
+#SBATCH --mem=464G   # memory per Nodes   #38
+#SBATCH -J "SR"   # job name
 #SBATCH --mail-user=carole.belliardo@inrae.fr   # email address
 #SBATCH --mail-type=ALL
-#SBATCH -e slurm-run1-%j.err
-#SBATCH -o slurm-run1-%j.out
+#SBATCH -e slurm-SR-%j.err
+#SBATCH -o slurm-SR-%j.out
 #SBATCH -p all
 
 
@@ -18,7 +18,7 @@
 
 module load singularity/3.5.3
 module load nextflow/21.04.1
-cd ''
+cd '/kwak/hub/25_cbelliardo/25_MISTIC/tools'
 
 
 nextflow run -profile singularity metagwgs/main.nf \

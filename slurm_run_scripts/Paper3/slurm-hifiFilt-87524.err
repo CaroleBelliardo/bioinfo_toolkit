@@ -1,2 +1,22 @@
 /database/hub/WORKFLOW/HiFiAdapterFilt/pbadapterfilt.sh: line 83: [: too many arguments
 BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './aubergine_I_oct2__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './aubergine_I_oct__hifi_reads.fasta': No such file or directory
+Command line argument error: Argument "query". File is not accessible:  `./aubergine_R_oct2__hifi_reads.fasta'
+rm: cannot remove './aubergine_R_oct2__hifi_reads.fasta': No such file or directory
+Command line argument error: Argument "query". File is not accessible:  `./aubergine_R_oct__hifi_reads.fasta'
+rm: cannot remove './aubergine_R_oct__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './concombre_I_jui__hifi_reads.fasta': No such file or directory
+Command line argument error: Argument "query". File is not accessible:  `./concombre_R_jui__hifi_reads.fasta'
+rm: cannot remove './concombre_R_jui__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './poivron_I_oct__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './poivron_R_oct__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './salade_I_fev__hifi_reads.fasta': No such file or directory
+BLAST Database error: No alias or index file found for nucleotide database [/pacbio_vectors_db] in search path [/kwak/hub/25_cbelliardo/MetaNema_LRmg/10Metag/fastq::]
+rm: cannot remove './salade_R_fev__hifi_reads.fasta': No such file or directory
+sbatch: error: Batch script is empty!
