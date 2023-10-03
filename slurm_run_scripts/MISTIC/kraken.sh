@@ -24,9 +24,10 @@ cd $1
 #FILENAME=${FILES[$SLURM_ARRAY_TASK_ID]}
 
 db='/database/hub/NT/NT_kraken' 
-FILENAME1=$2
-FILENAME2=$3
-out=$4
+out=$2
+FILENAME1=$3
+FILENAME2=$4
+
 #out1=$5
 #out2=$6    
 
@@ -34,5 +35,5 @@ $SING2 $SING_IMG kraken2 --paired --use-names --gzip-compressed --threads $SLURM
 
 ## run kraken
 #$ sbatch kraken.sh <wd_path> <outputname> <filename1> <filename2> # <clasifiedOUT> <UNclassifiedOUT> 
-#$ sbatch kraken.sh /kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/01_clean_qc/01_1_cleaned_reads cleaned_run1.krak cleaned_run1_R1.fastq.gz cleaned_run1_R2.fastq.gz # cleaned_run1_#_Kclassified cleaned_run1_#_Kunclassified
-#$ sbatch kraken.sh /kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/01_clean_qc/01_2_cleaned_reads cleaned_run2.krak cleaned_run2_R2.fastq.gz cleaned_run2_R2.fastq.gz  #cleaned_run2_#_Kclassified cleaned_run2_#_Kunclassified
+#$ sbatch kraken.sh /kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/01_clean_qc/01_1_cleaned_reads cleaned_run1.krak cleaned_run1_R1.fastq cleaned_run1_R2.fastq # cleaned_run1_#_Kclassified cleaned_run1_#_Kunclassified
+#$ sbatch kraken.sh /kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/01_clean_qc/01_2_cleaned_reads cleaned_run2.krak cleaned_run2_R2.fastq cleaned_run2_R2.fastq  #cleaned_run2_#_Kclassified cleaned_run2_#_Kunclassified

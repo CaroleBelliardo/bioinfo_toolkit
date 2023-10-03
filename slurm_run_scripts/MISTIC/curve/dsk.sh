@@ -3,9 +3,9 @@
 #Submit this script with: sbatch thefilename
 
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
-#SBATCH --cpus-per-task=10     # number of CPU per task #4
+#SBATCH --cpus-per-task=2     # number of CPU per task #4
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --mem=80G   # memory per Nodes   #38
+#SBATCH --mem=16G   # memory per Nodes   #38
 #SBATCH -J "dsk"   # job name
 #SBATCH --mail-user=carole.belliardo@inrae.fr   # email address
 #SBATCH --mail-type=ALL

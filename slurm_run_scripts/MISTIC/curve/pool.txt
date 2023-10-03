@@ -1,9 +1,0 @@
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 142266744 > ${out}/hifi_reads_0.1.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 284533487 > ${out}/hifi_reads_0.2.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 426800231 > ${out}/hifi_reads_0.3.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 569066975 > ${out}/hifi_reads_0.4.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 711333719 > ${out}/hifi_reads_0.5.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 853600462 > ${out}/hifi_reads_0.6.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 995867206 > ${out}/hifi_reads_0.7.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 1138133950 > ${out}/hifi_reads_0.8.fasta
-$SING2 $SING_IMG seqtk sample -s100 $hifi_reads 1280400693 > ${out}/hifi_reads_0.9.fasta
