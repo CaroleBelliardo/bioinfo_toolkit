@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is used to run HMMER3.3.2 to search for homologous sequences in a fasta file.
+# The script loads the singularity module, sets the input and output files, and runs the hmmsearch command with specified parameters.
 
 #Submit this script with: sbatch thefilename
 
@@ -28,7 +30,5 @@ output_file=new-motif-2-3-1.hmm
 
 #$SING2 $SING_IMG hmmbuild $output_file $input_fileh
 
-
-
 #$SING2 $SING_IMG hmmsearch --cpu 10 -E 0.1 new-motif-2-3-1.hmm Minc_mobilome.fasta >  new-motif-2-3-1_vs_Minc_mobilome.out
-$SING2 $SING_IMG hmmsearch --cpu 10 -E 0.1 --tblout new-motif-2-3-1_vs_Minc_mobilome.out2 new-motif-2-3-1.hmm Minc_mobilome.fasta 
+$SING2 $SING_IMG hmmsearch --cpu 10 -E 0.1 --tblout new-motif-2-3-1_vs_Minc_mobilome.out2 new-motif-2-3-1.hmm Minc_mobilome.fasta

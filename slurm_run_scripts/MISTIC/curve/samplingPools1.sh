@@ -3,14 +3,14 @@
 #Submit this script with: sbatch thefilename
 
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
-#SBATCH --cpus-per-task=20     # number of CPU per task #4
+#SBATCH --cpus-per-task=1     # number of CPU per task #4
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --mem=160G   # memory per Nodes   #38
-#SBATCH -J "subsampP1"   # job name
+#SBATCH --mem=8G   # memory per Nodes   #38
+#SBATCH -J "subsampP"   # job name
 #SBATCH --mail-user=carole.belliardo@inrae.fr   # email address
 #SBATCH --mail-type=ALL
-#SBATCH -e slurm-ssp1-%j.err
-#SBATCH -o slurm-ssp1-%j.out
+#SBATCH -e slurm-ssp-tk-%j.err
+#SBATCH -o slurm-ssp-tk-%j.out
 #SBATCH -p all
 
 module load singularity/3.5.3
