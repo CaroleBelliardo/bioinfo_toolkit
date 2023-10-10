@@ -3,9 +3,9 @@
 #Submit this script with: sbatch thefilename
 
 #SBATCH --ntasks=1   # number of processor cores (i.e. tasks)
-#SBATCH --cpus-per-task=26     # number of CPU per task #4
+#SBATCH --cpus-per-task=250     # number of CPU per task #4
 #SBATCH --nodes=1   # number of nodes
-#SBATCH --mem=60G   # memory per Nodes   #38
+#SBATCH --mem=1000G   # memory per Nodes   #38
 #SBATCH -J "mappingMf"   # job name
 #SBATCH --mail-user=carole.belliardo@inrae.fr   # email address
 #SBATCH --mail-type=ALL
@@ -47,7 +47,7 @@ sam=$out.sam
 bam=$out.bam
 
 SING_IMG='/database/hub/SINGULARITY_GALAXY/sambamba_1.0--h98b6b92_0'
-$SING2 $SING_IMG sambamba view --nthreads $SLURM_JOB_CPUS_PER_NODE -o $bam -S $sam
+$SING2 $SING_IMG sambamba view --nthreads $SLURM_JOB_CPUS_PER_NODE -f 'bam' -o $bam -S $sam
 check_command
 
 $SING2 $SING_IMG sambamba sort -m 26G -t $SLURM_JOB_CPUS_PER_NODE -o $bam.sorted --tmpdir ./tmp_sambamba_$5 $bam
