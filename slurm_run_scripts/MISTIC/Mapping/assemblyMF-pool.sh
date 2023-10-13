@@ -47,30 +47,30 @@ sam=$out.sam
 bam=$out.bam
 
 SING_IMG='/database/hub/SINGULARITY_GALAXY/sambamba_1.0--h98b6b92_0'
-$SING2 $SING_IMG sambamba view --nthreads $SLURM_JOB_CPUS_PER_NODE -f 'bam' -o $bam -S $sam
-check_command
+#$SING2 $SING_IMG sambamba view --nthreads $SLURM_JOB_CPUS_PER_NODE -f 'bam' -o $bam -S $sam
+#check_command
 
-$SING2 $SING_IMG sambamba sort -m 26G -t $SLURM_JOB_CPUS_PER_NODE -o $bam.sorted --tmpdir ./tmp_sambamba_$5 $bam
-check_command
+#$SING2 $SING_IMG sambamba sort -m 26G -t $SLURM_JOB_CPUS_PER_NODE -o $bam.sorted --tmpdir ./tmp_sambamba_$5 $bam
+#check_command
 
-$SING2 $SING_IMG sambamba index --nthreads $SLURM_JOB_CPUS_PER_NODE $bam.sorted
-check_command
+#$SING2 $SING_IMG sambamba index --nthreads $SLURM_JOB_CPUS_PER_NODE $bam.sorted
+#check_command
 
-$SING2 $SING_IMG sambamba flagstat -p -t $SLURM_JOB_CPUS_PER_NODE $bam.sorted > $bam.sorted_flasgstat
+#$SING2 $SING_IMG sambamba flagstat -p -t $SLURM_JOB_CPUS_PER_NODE $bam.sorted > $bam.sorted_flasgstat
 
 
-$SING2 $SING_IMG sambamba markdup -r -p -t $SLURM_JOB_CPUS_PER_NODE --tmpdir tmp_dir_pool $bam $bam.rmdup
-check_command
+#$SING2 $SING_IMG sambamba markdup -r -p -t $SLURM_JOB_CPUS_PER_NODE --tmpdir tmp_dir_pool $bam $bam.rmdup
+#check_command
 
-$SING2 $SING_IMG sambamba flagstat -p -t $SLURM_JOB_CPUS_PER_NODE $bam.rmdup > $bam.rmdup_flasgstat
-check_command
+#$SING2 $SING_IMG sambamba flagstat -p -t $SLURM_JOB_CPUS_PER_NODE $bam.rmdup > $bam.rmdup_flasgstat
+#check_command
 
 SING_IMG="/database/hub/SINGULARITY_GALAXY/metagwgs.sif"
 $SING2 $SING_IMG samtools coverage -o $bam.coverage $bam
 check_command
 
-$SING2 $SING_IMG samtools stats --threads $SLURM_JOB_CPUS_PER_NODE -o $bam.stat $bam
-check_command
+#$SING2 $SING_IMG samtools stats --threads $SLURM_JOB_CPUS_PER_NODE -o $bam.stat $bam
+#check_command
 
 ##run
 # $ sbatch mappingSRLR2.sh
