@@ -33,11 +33,11 @@ SING_IMG='/database/hub/SINGULARITY_GALAXY/bwa-mem2:2.2.1--hd03093a_2'
 SING2='singularity exec --bind /kwak/hub:/kwak/hub:rw'
 
 cd "/kwak/hub/25_cbelliardo/MISTIC/Salade_I/mapping_SR_LR_assembly"
-REF='/kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_assemblage_LR/metafly/assembly.fasta'
+REF='/kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_assemblage_LR/metafly/assembly.fasta_'
 fq1='/kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/cleaned_pool_R1.fastq.gz'
 fq2='/kwak/hub/25_cbelliardo/MISTIC/Salade_I/2_QC_fastq/cleaned_pool_R2.fastq.gz'
 
-out='cleaned_pool__vs__hifiassemblyMF'
+out='cleaned_pool__vs__hifiassemblyMF_'
 
 $SING2 $SING_IMG bwa-mem2 index $REF
 echo 'index ok'

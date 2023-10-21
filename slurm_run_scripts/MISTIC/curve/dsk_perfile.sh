@@ -26,6 +26,10 @@ cd /kwak/hub/25_cbelliardo/MISTIC/Salade_I/3_curve
 input=$1
 output=$2
 outputxt=$3
-$SING2 $SING_IMG dsk -nb-cores 10 -file $input -out $output > $outputxt
+
+solid_kmer=echo input | awk -F '.' '{print $2}'
+echo $input ':' $solid_kmer
+
+$SING2 $SING_IMG dsk -nb-cores $SLURM_JOB_CPUS_PER_NODE -file $input -out $output -abundance-min $solid_kmer > $outputxt
 
 #$SING2 $SING_IMG dsk2ascii -file $output -out $outputxt

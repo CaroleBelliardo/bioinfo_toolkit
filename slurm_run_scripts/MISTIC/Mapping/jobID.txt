@@ -1,8 +1,0 @@
-cbelliardo@Biglogin:/work/cbelliardo/bin/slurm_run_scripts/MISTIC/Mapping$ sbatch assembly-pool.sh
-Submitted batch job 88088
-cbelliardo@Biglogin:/work/cbelliardo/bin/slurm_run_scripts/MISTIC/Mapping$ sbatch assembly-run2.sh
-Submitted batch job 88089
-cbelliardo@Biglogin:/work/cbelliardo/bin/slurm_run_scripts/MISTIC/Mapping$ sbatch reads-pool.sh
-Submitted batch job 88090
-cbelliardo@Biglogin:/work/cbelliardo/bin/slurm_run_scripts/MISTIC/Mapping$ sbatch reads-run2.sh
-Submitted batch job 88091
