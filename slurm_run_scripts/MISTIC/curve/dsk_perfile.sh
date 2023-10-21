@@ -27,8 +27,16 @@ input=$1
 output=$2
 outputxt=$3
 
-solid_kmer=echo input | awk -F '.' '{print $2}'
+bn=$(basename $input)
+bnn=$(echo $bn | sed 's/\.fasta//') 
+IFS='_' read -ra parts <<< "$bnn"
+solid_kmer=${parts[-1]}
 echo $input ':' $solid_kmer
+
+
+# multiply solid_kmer by 20
+solid_kmer=$(echo "$solid_kmer" | awk '{printf "%d", $1 * 20}')
+echo $input "* 20" ':' $solid_kmer
 
 $SING2 $SING_IMG dsk -nb-cores $SLURM_JOB_CPUS_PER_NODE -file $input -out $output -abundance-min $solid_kmer > $outputxt
 
