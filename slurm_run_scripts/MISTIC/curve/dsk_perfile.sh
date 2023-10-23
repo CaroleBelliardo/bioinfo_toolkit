@@ -35,7 +35,7 @@ echo $input ':' $solid_kmer
 
 
 # multiply solid_kmer by 20
-solid_kmer=$(echo "$solid_kmer" | awk '{printf "%d", $1 * 20}')
+solid_kmer=$(echo "$solid_kmer" | awk '{printf "%d", $1 * 10}')
 echo $input "* 20" ':' $solid_kmer
 
 $SING2 $SING_IMG dsk -nb-cores $SLURM_JOB_CPUS_PER_NODE -file $input -out $output -abundance-min $solid_kmer > $outputxt

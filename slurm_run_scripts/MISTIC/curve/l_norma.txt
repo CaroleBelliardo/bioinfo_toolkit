@@ -1,0 +1,9 @@
+HIFI/subsampling1/hifi_reads_0.2.fasta
+HIFI/subsampling1/hifi_reads_0.3.fasta
+HIFI/subsampling1/hifi_reads_0.4.fasta
+HIFI/subsampling1/hifi_reads_0.5.fasta
+HIFI/subsampling1/hifi_reads_0.6.fasta
+HIFI/subsampling1/hifi_reads_0.7.fasta
+HIFI/subsampling1/hifi_reads_0.8.fasta
+HIFI/subsampling1/hifi_reads_0.9.fasta
+HIFI/subsampling1/hifi_reads_1.fasta
