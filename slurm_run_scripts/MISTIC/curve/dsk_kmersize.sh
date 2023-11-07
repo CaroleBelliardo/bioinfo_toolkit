@@ -25,20 +25,27 @@ cd /kwak/hub/25_cbelliardo/MISTIC/Salade_I/3_curve
 
 input=$1
 ksize=$4
-output=${2}_2kmer_$ksize
-outputxt=${3}_2kmer_$ksize
-
-
-bn=$(basename $input)
-bnn=$(echo $bn | sed 's/\.fasta//') 
-IFS='_' read -ra parts <<< "$bnn"
-solid_kmer=${parts[-1]}
-echo $input ':' $solid_kmer
-
+is_norm=$5
+if is_norm =='true'; then
+    bn=$(basename $input)
+    bnn=$(echo $bn | sed 's/\.fasta//') 
+    IFS='_' read -ra parts <<< "$bnn"
+    solid_kmer=${parts[-1]}
+    solid_kmer=$(echo "$solid_kmer" | awk '{printf "%d", $1 * 10}')
+    echo $input "* 10" ':' $solid_kmer  
+else
+    solid_kmer=2
+fi
+    echo $input ':' $solid_kmer
 
 # multiply solid_kmer by 20
-solid_kmer=$(echo "$solid_kmer" | awk '{printf "%d", $1 * 10}')
-echo $input "* 10" ':' $solid_kmer
 
-$SING2 $SING_IMG dsk -nb-cores $SLURM_JOB_CPUS_PER_NODE -file $input -out $output  -kmer-size $ksize > $outputxt # -abundance-min $solid_kmer
+
+output=${2}_${solid_kmer}kmer_$ksize
+outputxt=${3}_${solid_kmer}2kmer_$ksize
+
+
+$SING2 $SING_IMG dsk -nb-cores $SLURM_JOB_CPUS_PER_NODE -file $input -out $output -abundance-min $solid_kmer -kmer-size $ksize > $outputxt  
 #$SING2 $SING_IMG dsk2ascii -file $output -out $outputxt
+
+# run with: sbatch dsk_kmersize.sh <input:file> <output:file> <outputxt:file> <ksize:int> <is_norm:bool>
